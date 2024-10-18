@@ -1,0 +1,229 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior:smooth ;
+}
+
+:root {
+  --main: #2c3e50;
+  --text: #ffffff;
+  --stork: #f5f5dc;
+  --secondary: #669999;
+}
+
+body {
+  font-family:"Noto serif",sans-serif;
+  text-align: center;
+  background-color: var(--main);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "poppins",sans-serif;
+}
+h1 {
+  font-size: 60px ;
+}
+
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--main);
+  padding: 20px 0;
+  font-size: 20px;
+  border-bottom: 1px solid var(--stork) ;
+  
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: var(--text);
+  padding: 0 10px;
+}
+
+.nav-link a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 70px 0;
+  min-height: 100vh;
+}
+#projects a {
+  color: white;
+  text-decoration: none;
+}
+
+#welcome-section {
+  background-color: var(--main);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+}
+
+#welcome-section h1 {
+  font-size: 60px;
+  margin-top: 30vh;
+}
+
+#welcome-section p {
+  color:#02dadac4;
+  font-size: 25px;
+  margin: 25px 0;
+  font-style: italic;
+}
+
+#projects {
+  background-color: var(--secondary);
+  color: #002B36;
+}
+
+#projects h1 {
+  border-bottom: 5px solid #002B36;
+  width: fit-content;
+  margin: auto;
+}
+
+#projects .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  place-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#projects .project-title {
+  height: 525px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main);
+  color:var(--text) ;
+  box-shadow: 8px 8px 10px 5px rgba(100,100,100,0.3);
+  text-decoration: none;
+}
+
+#projects .project-tile img {
+  height: 100%;
+  width: 100%;
+}
+
+#projects .project-tile p {
+  font-size: 25px;
+  padding: 10px;
+}
+
+#projects .project-tile span {
+  opacity: 0%;
+  padding: 0 5px;
+
+}
+
+#projects .project-tile:hover span {
+  opacity: 100%;
+  color: var(--stork);
+  transition: 0.25 ease-in;
+}
+
+.show-all {
+  text-decoration: none;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 0px 15px;
+  background-color: var(--main);
+  color: var(--text);
+  font-size: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in ;
+  transition: color 0.2s ease-in ;
+}
+
+.show-all:hover {
+  background-color: #34495e;
+  color: #f0f0f0;
+}
+
+#contact {
+  background-color: var(--main);
+  color: white;
+}
+
+#contact h1 {
+ margin-top: 300px;
+}
+
+#contact .coffee-question {
+  color:#02dadac4;
+  font-size: 25px;
+  font-style: italic;
+}
+
+#contact .social-medias {
+  display: flex;
+  max-width: 1000px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 30px;
+}
+
+#contact .social-media {
+  text-decoration: none;
+  color: var(--text);
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  font-size: 22px;
+}
+#contact#contact .social-media:hover{
+  transform: translateY(10px);
+}
+
+footer {
+  border-top: 3px solid var(--stork);
+  color: blanchedalmond;
+  font-size: 25px;
+  padding: 30px;
+}
+
+@media only screen and (width < 700px) {
+  h1{
+    font-size: 50px;
+  }
+#projects .project-title{
+  height: 600px;
+  width: 100%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+ 
+
+
